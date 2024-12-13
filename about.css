@@ -1,0 +1,153 @@
+/* Style général de la page */
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-left .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-left .logo:hover {
+    color: #4CAF50; /* Changement de couleur sur hover */
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-right a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-right a:hover {
+    background-color: #4CAF50; /* Couleur de survol */
+    color: #fff; /* Texte blanc au survol */
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left {
+        margin-bottom: 10px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar-right a {
+        display: block;
+        padding: 10px 15px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Section Box */
+.section-box {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header inside sections */
+.section-box h1,
+.section-box h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Section content */
+.section-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Company Values */
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Section Google Maps */
+#google-map {
+    margin: 50px 0; /* Espacement vertical */
+    text-align: center; /* Centrer le contenu */
+}
+
+#google-map h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* Centrer la carte */
+    align-items: center;
+}
+
+iframe {
+    border: 1px solid #ddd; /* Bordure légère pour délimiter la carte */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet moderne */
+}
+
+h4{
+
+    color: white;
+}

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nosproduits</title>
+    <link rel="stylesheet" href="NosProduit.css">
+    <script src="loadingPage.js" defer></script>
+    <script src="panier.js"></script>
+</head>
+<body>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">MonKitMontage</a>
+        </div>
+        <div class="navbar-right">
+            <a href="request.html">Faites votre config</a>
+            <a href="NosProduits.html">Nos Produits</a>
+            <a href="Noscomposants.html">Nos composants</a>
+            <a href="Panier.html">Panier</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="mkm-sans-fond.png" alt="Logo MKM">
+        </a>
+    </div>
+
+    <div id="loading-screen" class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher..." />
+        <button>Rechercher</button>
+    </div>
+
+    <div class="produits-container">
+        <div class="produit-card">
+            <img src="pc-gamer-blackmax-RTX-4070.jpg" alt="PC Gamer" class="produit-image">
+            <div class="produit-info">
+                <h2 class="produit-nom">pc gamer blackmax RTX 4070</h2>
+                <p class="produit-prix">1299,99 €</p>
+                <button onclick="ajouterAuPanier(3)" class="produit-btn">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <div class="produit-card">
+            <img src="pc-gamer-noel.jpg" alt="Pc" class="produit-image">
+            <div class="produit-info">
+                <h2 class="produit-nom">PC Gamer Edition Noël</h2>
+                <p class="produit-prix"> 1199,99 €</p>
+                <button onclick="ajouterAuPanier(2)" class="produit-btn">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <div class="produit-card" data-id="1" data-nom="Razer" data-prix="2499,99" data-image="razer-blade-16-i9-16-go-rtx-4070-1-to.jpg">
+            <img src="razer-blade-16-i9-16-go-rtx-4070-1-to.jpg" alt="PC Portable" class="produit-image">
+            <div class="produit-info">
+                <h2 class="produit-nom">Razer blade 16 - I9 - 16go - Rtx 4070 - Oled</h2>
+                <p class="produit-prix">2499,99 €</p>
+                <button onclick="ajouterAuPanier(1)" class="produit-btn">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+
+
+ 
+       
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>© 2024 MonKitMontage. Tous droits réservés.</p>
+        <p>Adresse : 3 rue du Lycée - Orsay</p>
+        <p>Téléphone : <a href="tel:+33712345678" style="color: #4CAF50;">+33 7 12 34 56 78</a></p>
+        <p>Email : <a href="mailto:monkitmontage@gmail.com" style="color: #4CAF50;">monkitmontage@gmail.com</a></p>    
+        <a href="CGVMonKitMontage.pdf" style="color: #4CAF50;"><p>Conditions générales de ventes</p></a>
+        <a href="fiche_pratique_rgpd.pdf" style="color: #4CAF50;"><p>Mentions légales</p></a>
+    </footer>
+    
+</body>
+</html>

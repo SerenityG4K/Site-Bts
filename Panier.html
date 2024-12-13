@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="panier.css">
+    <script src="loadingPage.js" defer></script> <!-- Ajout de 'defer' pour garantir que le script se charge après le contenu -->
+</head>
+<body>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">MonKitMontage</a>
+        </div>
+        <div class="navbar-right">
+            <a href="request.html">Faites votre config</a>
+            <a href="NosProduits.html">Nos Produits</a>
+            <a href="Noscomposants.html">Nos composants</a>
+            <a href="Panier.html">Panier</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Contenu du panier -->
+    <div class="panier-container">
+        <h2>Mon Panier</h2>
+
+        <div id="panierItems">
+            <!-- Les articles du panier seront ajoutés ici dynamiquement -->
+        </div>
+
+        <div class="panier-total">
+            <p id="total">Total: 0,00 €</p>
+            <button id="validerPanier" onclick="validerPanier()">Valider ma commande</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 MonKitMontage. Tous droits réservés.</p>
+        <p>Adresse : 3 rue du Lycée - Orsay</p>
+        <p>Téléphone : <a href="tel:+33712345678" style="color: #4CAF50;">+33 7 12 34 56 78</a></p>
+        <p>Email : <a href="mailto:monkitmontage@gmail.com" style="color: #4CAF50;">monkitmontage@gmail.com</a></p>    
+        <a href="CGVMonKitMontage.pdf" aria-label="Conditions générales de ventes" style="color: #4CAF50;">Conditions générales de ventes</a>
+        <a href="fiche_pratique_rgpd.pdf" aria-label="Mentions légales" style="color: #4CAF50;">Mentions légales</a>
+    </footer>
+
+    <!-- Chargement du script JS -->
+    <script src="panier.js"></script>
+
+</body>
+</html>

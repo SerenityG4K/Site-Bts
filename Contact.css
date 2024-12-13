@@ -1,0 +1,435 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+  }
+  
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-left .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-left .logo:hover {
+    color: #4CAF50; /* Changement de couleur sur hover */
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-right a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-right a:hover {
+    background-color: #4CAF50; /* Couleur de survol */
+    color: #fff; /* Texte blanc au survol */
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left {
+        margin-bottom: 10px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar-right a {
+        display: block;
+        padding: 10px 15px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.panier-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.panier-container h2 {
+    text-align: center;
+}
+
+.panier-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.panier-item p {
+    margin: 0;
+}
+
+.panier-total {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#validerPanier {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#validerPanier:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+
+h2{
+
+
+    color: white;
+}
+
+p{
+
+    color: aliceblue;
+}
+
+
+/* Style général pour le conteneur principal */
+#box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image à gauche */
+#box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Conteneur de texte/formulaire */
+.text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Titre du formulaire */
+.text h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Séparation sous le titre */
+.separation {
+    width: 50px;
+    height: 2px;
+    background-color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Corps du formulaire */
+.corps-formulaire {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Partie gauche du formulaire */
+.gauche {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Partie droite du formulaire */
+.droite {
+    flex: 1;
+}
+
+/* Groupes de champs de formulaire */
+.groupe {
+    margin-bottom: 15px;
+}
+
+/* Labels des champs */
+.groupe label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Champs de texte et de saisie */
+.groupe input, .groupe textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Champ textarea (Message) */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Pied du formulaire */
+.pied-formulaire {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Bouton d'envoi */
+.pied-formulaire button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pied-formulaire button:hover {
+    background-color: #45a049;
+}
+
+/* Texte au bas du formulaire */
+.pied-formulaire p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+#box {
+    display: flex;
+    flex-wrap: wrap; /* Permet au contenu de s'empiler sur les petits écrans */
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image à gauche */
+#box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Ajoute un espacement sous l'image pour les petits écrans */
+}
+
+/* Conteneur de texte/formulaire */
+.text {
+    flex: 1;
+    min-width: 300px; /* Largeur minimale pour éviter des éléments trop petits */
+    margin-left: 20px;
+}
+
+/* Titre du formulaire */
+.text h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Séparation sous le titre */
+.separation {
+    width: 50px;
+    height: 2px;
+    background-color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Corps du formulaire */
+.corps-formulaire {
+    display: flex;
+    flex-wrap: wrap; /* Les sections passent à la ligne sur les petits écrans */
+    justify-content: space-between;
+}
+
+/* Partie gauche et droite du formulaire */
+.gauche, .droite {
+    flex: 1;
+    min-width: 300px; /* Largeur minimale pour garantir une bonne lisibilité */
+    margin-bottom: 20px;
+}
+
+/* Groupes de champs de formulaire */
+.groupe {
+    margin-bottom: 15px;
+}
+
+/* Labels des champs */
+.groupe label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Champs de texte et de saisie */
+.groupe input, .groupe textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Champ textarea (Message) */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Pied du formulaire */
+.pied-formulaire {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Bouton d'envoi */
+.pied-formulaire button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pied-formulaire button:hover {
+    background-color: #45a049;
+}
+
+/* Texte au bas du formulaire */
+.pied-formulaire p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive : Ajustement pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    #box {
+        flex-direction: column; /* Les éléments s'empilent verticalement */
+        align-items: center;
+    }
+
+    .text {
+        margin-left: 0; /* Supprime la marge gauche */
+    }
+
+    .corps-formulaire {
+        flex-direction: column; /* Les sections passent à la ligne */
+    }
+
+    .gauche, .droite {
+        margin-bottom: 10px;
+    }
+
+    .pied-formulaire button {
+        width: 100%; /* Bouton pleine largeur */
+    }
+}
+
+/* Responsive : Ajustement pour les écrans de moins de 480px */
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 22px;
+    }
+
+    .groupe input, .groupe textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .pied-formulaire button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
